@@ -15,12 +15,12 @@ export const auth = defineAuth({
        * then, import `secret` from `@aws-amplify/backend`
        * @see https://docs.amplify.aws/gen2/deploy-and-host/sandbox-environments/features/#setting-secrets
        */
-      google: {
-        clientId: secret('GOOGLE_CLIENT_ID'),
-        clientSecret: secret('GOOGLE_CLIENT_SECRET'),
-      }
+      // google: {
+      //   clientId: secret('GOOGLE_CLIENT_ID'),
+      //   clientSecret: secret('GOOGLE_CLIENT_SECRET'),
+      // }
     },
-  },
+  }, 
   /**
    * enable multifactor authentication
    * @see https://docs.amplify.aws/gen2/build-a-backend/auth/manage-mfa
