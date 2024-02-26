@@ -1,7 +1,14 @@
+'use client'
 import Image from 'next/image'
 import styles from './page.module.css'
+import { withAuthenticator } from '@aws-amplify/ui-react'
+import config from '@/amplifyconfiguration.json';
 
-export default function Home() {
+import { Amplify } from 'aws-amplify';
+
+Amplify.configure(config);
+
+function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -84,3 +91,5 @@ export default function Home() {
     </main>
   )
 }
+
+export default Home
